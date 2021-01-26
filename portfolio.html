@@ -2,90 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title> Portfolio </title>
 </head>
-<body>
+<body id= "simple"> </body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <a class="navbar-brand" href="secret.html"> <h1> Gabe Reickart </h1> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"> <h4> Home </h4> <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html"> <h4>My Portfolio  </h4> </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html"> <h4> Contact Me!</h4> </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Gabe Reickart</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Me!
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/gabe-reickart-18078b173/" target= "_blank"> Linkedin </a></li>
+                  <li><a class="dropdown-item" href="https://github.com/GreickHeart" target= "_blank"> Github </a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href= "https://docs.google.com/document/d/1CU5weH_ys-O-zOpGf0cPIka3iK1kEwSaWLvNtbUMGSw/edit?usp=sharing" target= "_blank"> My Resume </a></li>
+                </ul>
+              </li>
+
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    
+  
 
 <main> 
-      <div class= "row"> 
-        <div class=col-sm-2>  </div>
-       <div class=col-sm-4> <img src="https://image.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" class="img-fluid" alt="Placeholder image"> </div>
-       <div class=col-sm-4> 
 
-         <p> 
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat sunt dolores nulla minus aut commodi, quae asperiores provident doloremque quod expedita voluptatem quibusdam, incidunt quisquam temporibus. Quibusdam esse necessitatibus illum! </div> 
-         </p>
-
-       <div class=col-sm-2>  </div>
-       
-    </div>
- 
-
-
-
-    <div class= "row">
-        <div class=col-sm-2>  </div>
-        <div class=col-sm-4> 
-
-          <p> 
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse laudantium animi aspernatur officiis ad numquam quae hic, molestiae, vitae tempore, ipsam eos repudiandae? Veritatis itaque iure aliquam! Porro, eaque aspernatur! 
-          </p> 
-
+  <div class= container> 
+  <div id="DaddyDiv" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#DaddyDiv" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#DaddyDiv" data-bs-slide-to="1"></li>
+      <li data-bs-target="#DaddyDiv" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="Assets/PokeProof1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5</h5>
+          <p class= "slidetext">Dream Team allows you to search by pokemon name and number, so fans and new players alike can find their favorite pokemon.</p>
+        </div>
       </div>
-        <div class=col-sm-4> <img src="https://image.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" class= "img-fluid" alt= "Placeholder image"> </div>
-        <div class=col-sm-2>  </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="Assets/PokeProof2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5></h5>
+          <p class= "slidetext">When the user searches a pokemon, Dream Team displays it, along with its typing and stats. The user can search for another pokemon or catch the pokemon, adding it to their team.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Assets/PokeProof3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5></h5>
+          <p class= "slidetext"> After the pokemon is caught, it is added to the six slot team and saved to local storage to be accessed later.</p>
+        </div>
+      </div>
     </div>
+    <a class="carousel-control-prev" href="#DaddyDiv" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#DaddyDiv" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+</div>
 
 
-    <div class= "row"> 
-        <div class=col-sm-2>  </div>
-        <div class=col-sm-4> <img src="https://image.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" class="img-fluid" alt="Placeholder image"> </div>
-        <div class=col-sm-4> 
-
-          <p> 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores debitis officiis maxime dolore commodi? Quod eveniet vitae eius, id laborum provident iure enim reprehenderit optio dolore eligendi voluptatum impedit nobis?  </div>
-          </p>
-              <div class=col-sm-2>  </div>
-     </div>
-
-
-    <div class= "row">
-        <div class=col-sm-2>  </div>
-        <div class=col-sm-4> 
-          <p> 
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, molestiae eaque culpa, sit fuga velit neque fugiat, esse maiores voluptas nulla quam. Reprehenderit quasi officiis asperiores provident neque fuga ipsam? </div>
-          </p>
-             <div class=col-sm-4> <img src="https://image.shutterstock.com/image-vector/ui-image-placeholder-wireframes-apps-260nw-1037719204.jpg" class="img-fluid" alt="Placeholder image"> </div>
-        <div class=col-sm-2>  </div>
-
-    </div>
 
 </main>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
